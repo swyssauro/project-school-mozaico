@@ -12,7 +12,7 @@ export default function Infobox() {
     },
     {
       name: "Tratamento Adequado",
-      description: "rocure bons postos de saude para cuidar da sua saude.",
+      description: "procure postos de saude para cuidar da sua saude.",
     },
   ];
 

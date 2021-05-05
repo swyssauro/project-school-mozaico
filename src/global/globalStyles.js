@@ -12,4 +12,11 @@ export default createGlobalStyle`
   }
   :focus { outline: none }
   ::-webkit-scrollbar { width: 0px; }
+  
+  .leaflet-control-attribution.leaflet-control {
+    display: none;
+  }
+  .leaflet-control-zoom.leaflet-bar.leaflet-control {
+    display: none;
+  }
 `;

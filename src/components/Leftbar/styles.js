@@ -10,9 +10,10 @@ export const GridContainer = styled.div`
     "header header header"
     "left_bar main rigth_bar"
     "footer footer footer";
-
+  
   .footer {
     grid-area: footer;
+    background: #031b4e;
   }
   .header {
     grid-area: header;
