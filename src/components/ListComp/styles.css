@@ -1,0 +1,16 @@
+.box {
+  text-align: center;
+}
+.button-sub {
+  border: none;
+  line-height: 0;
+  padding: 20px;
+  color: #fff;
+  border-radius: 16px;
+  background: #006AFF;
+}
+.description {
+  padding: 0 15%;
+  color: #334155;
+  font-size: 16px;
+}

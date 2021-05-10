@@ -16,4 +16,22 @@ export const ContentBoxs = styled.div`
     border-radius: 10px;
     margin-right: 20px;
   }
+
+  .group_info {
+    line-height: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .description_p {
+    font-weight: 100;
+    color: #031b4e;
+  }
+  .description_info {
+    font-weight: 800;
+    font-size: 22px;
+    color: #031b4e;
+    padding: 20px;
+  }
 `;

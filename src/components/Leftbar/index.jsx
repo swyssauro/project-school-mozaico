@@ -1,21 +1,43 @@
-import { GridContainer } from "./styles";
+import { GridContainer, Lefbar, ResponsiveContainer } from "./styles";
+
 import Box from "../Infobox";
 import Info from "../Realtime";
 import Map from "../HealthPosts";
+import Footer from "../Footer";
+import Logo from "../../Images/logo.svg";
 
-export default function Lefbar(props) {
+export default function Lifs(props) {
   return (
     <GridContainer>
-      <div className="footer"></div>
-      <div className="header"></div>
-      <div className="left_bar">
+      <div className="footer">
+        <Footer />
+      </div>
+      <div className="nav">
+        <img draggable="false" src={Logo} alt="logo" />
+      </div>
+      <div className="header">
+        <div>
+          <h1>Kairos</h1>
+          <p>covid information.</p>
+        </div>
+        <div>
+          <a href="http://">
+            <button className="button-main">Informaçoes</button>
+          </a>
+          <a href="http://">
+            <button className="button-main">.gov</button>
+          </a>
+        </div>
+      </div>
+      <Lefbar collapse="xs">
         <Box />
         <Map />
-      </div>
-      <div className="rigth_bar">
         <Info />
-      </div>
+      </Lefbar>
       <div className="main">
+        <ResponsiveContainer collapse="ld">
+          <Map />
+        </ResponsiveContainer>
         {props.children}
       </div>
     </GridContainer>

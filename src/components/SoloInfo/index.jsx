@@ -10,7 +10,7 @@ export default function Soloinfo(props) {
             <h3>{props.name}</h3>
             <p>{props.description}</p>
           </div>
-          <p style={{ width: "50%", textAlign: "right"}}>{props.inicio} <b>&&</b> {props.termino}</p>
+          <p className="description">{props.inicio} <b>&&</b> {props.termino}</p>
         </ContentBoxs>
   );
 }

@@ -15,4 +15,12 @@ export const ContentBoxs = styled.div`
     border-radius: 10px;
     margin-right: 20px;
   }
+
+  .description {
+    @media only screen and (max-width: 600px) {
+    width: 50%;
+    text-align: right;
+    display: none;
+    }
+  }
 `;

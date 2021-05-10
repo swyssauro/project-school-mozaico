@@ -1,7 +1,8 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import Leaflet from "leaflet";
 import { FiHeart } from "react-icons/fi";
 import { ContentBoxs } from "./styles";
+import { Tween } from "react-gsap";
+import Leaflet from "leaflet";
 import PngIcon from "./info.svg";
 
 export default function HealthPost() {
@@ -31,9 +32,10 @@ export default function HealthPost() {
   ];
 
   return (
-    <div>
+    <Tween from={{ x: '-200px' }} stagger={0.2} ease="elastic.out(0.2, 0.1)">
+      <ContentBoxs>
       <aside>
-        <ContentBoxs>
+        <div className="container_box">
           <div className="icon_group">
             <FiHeart color="006aff" size={25} />
           </div>
@@ -43,7 +45,7 @@ export default function HealthPost() {
             <h3>Map</h3>
             <p>alguns pontos de saude.</p>
           </div>
-        </ContentBoxs>
+        </div>
       </aside>
       <MapContainer
         center={[-4.3215532, -40.7056121]}
@@ -62,6 +64,7 @@ export default function HealthPost() {
           );
         })}
       </MapContainer>
-    </div>
+      </ContentBoxs>
+    </Tween>
   );
 }
