@@ -12,6 +12,9 @@ export default function Lifs(props) {
       <div className="footer">
         <Footer />
       </div>
+      <div className="subfooter">
+      asdsa
+      </div>
       <div className="nav">
         <img draggable="false" src={Logo} alt="logo" />
       </div>
