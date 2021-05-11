@@ -38,11 +38,13 @@ export default function Lifs(props) {
           </a>
         </div>
       </div>
-      <Lefbar collapse="xs">
+      <ResponsiveContainer collapse="xs">
+      <Lefbar>
         <Box />
         <Map />
         <Info />
       </Lefbar>
+      </ResponsiveContainer>
       <div className="main">
         <ResponsiveContainer collapse="ld">
           <Map />

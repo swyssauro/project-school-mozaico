@@ -16,7 +16,6 @@ const media = {
 export const Lefbar = styled.div`
   grid-area: left_bar;
   padding: 20px;
-  ${(props) => props.collapse && media[props.collapse]}
 `;
 
 export const ResponsiveContainer = styled.div`
@@ -95,8 +94,7 @@ export const GridContainer = styled.div`
     align-content: space-between;
 
     @media only screen and (max-width: 600px) {
-      flex-direction: column;
-      text-align: center;
+      display: none;
     }
   }
 
