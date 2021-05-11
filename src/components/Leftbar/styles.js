@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import Backdrop from "../../Images/Component.svg";
-import Backdrop2 from "../../Images/bacdrop.svg";
+import Backdrop from "../../Images/backdrop.svg";
 
 const media = {
   xs: () => `
@@ -27,25 +26,26 @@ export const ResponsiveContainer = styled.div`
 export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: auto 1.3fr auto;
-  grid-template-rows: 200px 100px 1fr 150px;
+  grid-template-rows: auto 100px 1fr 300px;
   gap: 0px 0px;
   height: 100vh;
   grid-template-areas:
     "nav nav nav"
     "header header header"
     "left_bar main rigth_bar"
+    "subfooter subfooter subfooter"
     "footer footer footer";
 
   .nav {
     grid-area: nav;
     background: #0021c9;
-    background-image: url(${Backdrop2});
+
     background-repeat: no-repeat;
     background-size: cover;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     padding: 20px;
 
@@ -85,6 +85,28 @@ export const GridContainer = styled.div`
       padding: 0px;
     }
   }
+  .subfooter {
+    grid-area: subfooter;
+    padding: 20px;
+    display: flex;
+    background: #001644;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .title {
+    font-size: 50px;
+  line-height: 50px;
+  width: fit-content;
+  text-decoration: underline;
+  color: #07276c;
+  }
   .button-main {
     padding: 20px;
     border: none;
@@ -100,6 +122,10 @@ export const GridContainer = styled.div`
     @media only screen and (max-width: 600px) {
       display: none;
     }
+  }
+  .description-turmar {
+    font-size: 25px;
+    color: #1456e2;
   }
   button.button-main:hover {
     transform: scale(1.1);

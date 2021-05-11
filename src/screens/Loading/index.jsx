@@ -79,7 +79,7 @@ function Loadings() {
                   backdrop={backdrop4}
                   title="Nós estamos prontos"
                   description="agora que você sabe como cuidar de si mesmo de maneira adequada."
-                  onclick={() => history.push("/auth")}
+                  onclick={() => history.push("/dashboard")}
                 />
               </div>
             </Tween>

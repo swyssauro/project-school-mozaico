@@ -7,7 +7,7 @@ export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-          <Route exact path="/auth" component={Auth} />
+          <Route exact path="/dashboard" component={Auth} />
           <Route exact path="/" component={Loading} />
       </Switch>
     </BrowserRouter>

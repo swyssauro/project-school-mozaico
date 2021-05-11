@@ -13,7 +13,13 @@ export default function Lifs(props) {
         <Footer />
       </div>
       <div className="subfooter">
-      asdsa
+      <div>
+        <h1 className="title">Contribuidores do <br/>
+        Projeto</h1>
+      </div>
+      <div>
+        <h3 className="description-turmar">Turma 2º ano Kairos Ipu</h3>
+      </div>
       </div>
       <div className="nav">
         <img draggable="false" src={Logo} alt="logo" />
@@ -24,10 +30,10 @@ export default function Lifs(props) {
           <p>covid information.</p>
         </div>
         <div>
-          <a href="http://">
+          <a href="https://www.ipu.ce.gov.br/boletim.php">
             <button className="button-main">Informaçoes</button>
           </a>
-          <a href="http://">
+          <a href="https://www.ipu.ce.gov.br/">
             <button className="button-main">.gov</button>
           </a>
         </div>
