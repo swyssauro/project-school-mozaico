@@ -44,7 +44,7 @@ function Loadings() {
                 <Box
                   backdrop={backdrop2}
                   title="Fique dentro de Casa"
-                  description="Sem nenhum motivo, recomendo não sair de casa."
+                  description="Recomendamos não sair de casa pois o risco de contaminação é maior."
                   onclick={() => setScreen(3)}
                 />
               </div>
