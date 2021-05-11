@@ -18,7 +18,7 @@ export default function Lifs(props) {
         Projeto</h1>
         <div className="flex-info">
         <a href="https://www.kairosipu.com/">Inform Kairosipu</a>
-        <a href="https://www.instagram.com/kairosipu/">Intagram Kairosipu</a>
+        <a href="https://www.instagram.com/kairosipu/">Instagram Kairosipu</a>
         </div>
       </div>
       <div>
