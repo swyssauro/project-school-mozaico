@@ -27,7 +27,7 @@ function Loadings() {
                 <Box
                   backdrop={backdrop1}
                   title="Cuide de Pessoas Idosas"
-                  description="Continua a verificar os idosos de vez em quando."
+                  description="Continue a verificar a saúde e o estado em que as pessoas idosas se encontram."
                   onclick={() => setScreen(2)}
                 />
               </div>
@@ -61,7 +61,7 @@ function Loadings() {
                 <Box
                   backdrop={backdrop3}
                   title="Tratamento Adequado"
-                  description="Procure bons postos de saude para cuidar da sua saude."
+                  description="Em caso de sintomas procure um posto de saúde o mais rápido possível."
                   onclick={() => setScreen(4)}
                 />
               </div>
@@ -77,8 +77,8 @@ function Loadings() {
               <div>
                 <Box
                   backdrop={backdrop4}
-                  title="Nós estamos prontos"
-                  description="agora que você sabe como cuidar de si mesmo de maneira adequada."
+                  title="Agora que você está pronto!!"
+                  description="Agora que completamos algumas orientações/prevenções do covid19, vamos para o dashboard."
                   onclick={() => history.push("/dashboard")}
                 />
               </div>

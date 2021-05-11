@@ -62,6 +62,12 @@ export const GridContainer = styled.div`
     align-content: flex-end;
     padding: 20px;
   }
+  .flex-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-block-start: 10px;
+  }
   .header {
     grid-area: header;
     background: #006aff;
@@ -94,7 +100,7 @@ export const GridContainer = styled.div`
     align-content: space-between;
 
     @media only screen and (max-width: 600px) {
-      display: none;
+      flex-direction: column;
     }
   }
 
@@ -104,6 +110,10 @@ export const GridContainer = styled.div`
   width: fit-content;
   text-decoration: underline;
   color: #07276c;
+  @media only screen and (max-width: 600px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
   }
   .button-main {
     padding: 20px;
@@ -124,6 +134,11 @@ export const GridContainer = styled.div`
   .description-turmar {
     font-size: 25px;
     color: #1456e2;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 25px;
+      text-align: center;
+    }
   }
   button.button-main:hover {
     transform: scale(1.1);

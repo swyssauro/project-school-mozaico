@@ -16,6 +16,10 @@ export default function Lifs(props) {
       <div>
         <h1 className="title">Contribuidores do <br/>
         Projeto</h1>
+        <div className="flex-info">
+        <a href="https://www.kairosipu.com/">Inform Kairosipu</a>
+        <a href="https://www.instagram.com/kairosipu/">Intagram Kairosipu</a>
+        </div>
       </div>
       <div>
         <h3 className="description-turmar">Turma 2º ano Kairos Ipu</h3>
