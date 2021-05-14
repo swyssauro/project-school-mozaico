@@ -45,36 +45,6 @@ const data = [
     confirmados: 3809,
     notificados: 12248,
   },
-  {
-    name: "05/05",
-    suspeitos: 81,
-    confirmados: 3823,
-    notificados: 12275,
-  },
-  {
-    name: "06/05",
-    suspeitos: 89,
-    confirmados: 3855,
-    notificados: 12392,
-  },
-  {
-    name: "07/05",
-    suspeitos: 93,
-    confirmados: 3871,
-    notificados: 12440,
-  },
-  {
-    name: "10/05",
-    suspeitos: 73,
-    confirmados: 4004,
-    notificados: 12614,
-  },
-  {
-    name: "11/05",
-    suspeitos: 73,
-    confirmados: 4024,
-    notificados: 12687,
-  },
 ];
 
 const CustomTooltip = ({ active, payload, label }) => {

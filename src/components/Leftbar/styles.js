@@ -31,7 +31,7 @@ export const GridContainer = styled.div`
   grid-template-areas:
     "nav nav nav"
     "header header header"
-    "left_bar main rigth_bar"
+    "left_bar main main"
     "subfooter subfooter subfooter"
     "footer footer footer";
 
@@ -41,7 +41,6 @@ export const GridContainer = styled.div`
 
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -51,6 +50,19 @@ export const GridContainer = styled.div`
     @media only screen and (max-width: 600px) {
       background-size: initial !important;
     }
+  }
+
+  .box-not {
+    padding: 20px;
+    border-radius: 16px;
+    width: fit-content;
+    margin-block-end: 10px;
+    margin-right: 10px;
+  }
+  .container-bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .footer {
     grid-area: footer;
@@ -106,14 +118,14 @@ export const GridContainer = styled.div`
 
   .title {
     font-size: 50px;
-  line-height: 50px;
-  width: fit-content;
-  text-decoration: underline;
-  color: #07276c;
-  @media only screen and (max-width: 600px) {
-    font-size: 30px;
-    line-height: 30px;
-  }
+    line-height: 50px;
+    width: fit-content;
+    text-decoration: underline;
+    color: #07276c;
+    @media only screen and (max-width: 600px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
   .button-main {
     padding: 20px;
